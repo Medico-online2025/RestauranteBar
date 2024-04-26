@@ -1,0 +1,340 @@
+/*
+* demo.css
+* File include item demo only specific css only
+******************************************************************************/
+
+.light-style .menu .app-brand.demo {
+  height: 64px;
+}
+
+.dark-style .menu .app-brand.demo {
+  height: 64px;
+}
+
+.app-brand-logo.demo {
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -ms-flexbox;
+  display: flex;
+  width: 34px;
+  height: 24px;
+}
+
+.app-brand-logo.demo svg {
+  width: 35px;
+  height: 24px;
+}
+
+.app-brand-text.demo {
+  font-size: 1.375rem;
+}
+
+/* ! For .layout-navbar-fixed added fix padding top tpo .layout-page */
+.layout-navbar-fixed .layout-wrapper:not(.layout-without-menu) .layout-page {
+  padding-top: 64px !important;
+}
+.layout-navbar-fixed .layout-wrapper:not(.layout-horizontal):not(.layout-without-menu) .layout-page {
+  padding-top: 78px !important;
+}
+/* Navbar page z-index issue solution */
+.content-wrapper .navbar {
+  z-index: auto;
+}
+
+/*
+* Content
+******************************************************************************/
+
+.demo-blocks > * {
+  display: block !important;
+}
+
+.demo-inline-spacing > * {
+  margin: 1rem 0.375rem 0 0 !important;
+}
+
+/* ? .demo-vertical-spacing class is used to have vertical margins between elements. To remove margin-top from the first-child, use .demo-only-element class with .demo-vertical-spacing class. For example, we have used this class in forms-input-groups.html file. */
+.demo-vertical-spacing > * {
+  margin-top: 1rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-lg > * {
+  margin-top: 1.875rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-lg.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-xl > * {
+  margin-top: 5rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-xl.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.rtl-only {
+  display: none !important;
+  text-align: left !important;
+  direction: ltr !important;
+}
+
+[dir='rtl'] .rtl-only {
+  display: block !important;
+}
+
+/*
+* Layout demo
+******************************************************************************/
+
+.layout-demo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.layout-demo-placeholder img {
+  width: 900px;
+}
+.layout-demo-info {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.ID-load {
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ID-load > div {
+  text-align: center;
+}
+.ID-load .id-load-content {
+  text-align: center;
+  margin-top: 5px;
+  padding-top: 15px;
+  border-top: solid 1px #aaa;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+}
+.ID-load .id-load-content .id-load-icon {
+  box-sizing: border-box;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  filter: grayscale(1);
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  animation: pulse 1s ease infinite;
+}
+.ID-load .id-load-content .id-load-icon:nth-child(6) {
+  animation-delay: 0.83333s;
+}
+.ID-load .id-load-content .id-load-icon:nth-child(5) {
+  animation-delay: 0.66667s;
+}
+.ID-load .id-load-content .id-load-icon:nth-child(4) {
+  animation-delay: 0.5s;
+}
+.ID-load .id-load-content .id-load-icon:nth-child(3) {
+  animation-delay: 0.33333s;
+}
+.ID-load .id-load-content .id-load-icon:nth-child(2) {
+  animation-delay: 0.16667s;
+}
+.ID-load .id-load-content .id-load-icon:nth-child(1) {
+  margin-left: 0;
+  animation-delay: 0s;
+}
+.ID-load .id-load-content .id-load-icon svg {
+  width: 60%;
+  height: auto;
+}
+.ID-load .id-load-content .id-load-icon svg path {
+  fill: #ffffff;
+}
+.ID-load .id-load-content .id-shop {
+  background-color: #488fff;
+}
+.ID-load .id-load-content .id-cart {
+  background-color: #aa77dd;
+}
+.ID-load .id-load-content .id-register {
+  background-color: #7775d9;
+}
+.ID-load .id-load-content .id-report {
+  background-color: #17ce7b;
+}
+.ID-load .id-load-content .id-sale {
+  background-color: #feaa55;
+}
+.ID-load .id-load-content .id-invetory {
+  background-color: #0dd5aa;
+}
+@keyframes pulse {
+  0%, 50%, 100% {
+    transform: scale(1);
+    filter: grayscale(1);
+    opacity: 0.7;
+  }
+  25% {
+    transform: scale(1.35);
+    filter: grayscale(0);
+    opacity: 1;
+  }
+}
+
+.body-sign .hero-area {
+  position: relative;
+  background-image: url(/images/background/bg1.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.body-sign .hero-area .container {
+  position: relative;
+}
+.body-sign .hero-area img {
+  max-width: 500px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+@media only screen and (max-width: 990px) {
+  .body-sign .hero-area img {
+    max-width: 400px;
+    right: -50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .body-sign .hero-area img {
+    display: none;
+  }
+}
+.body-sign .hero-area .card {
+  box-shadow: 0px 0px 19px 7px #fafafa;
+  border-radius: 12px;
+}
+.body-sign .hero-area .card .card-body {
+  border-radius: 12px;
+  padding-bottom: 40px;
+}
+.body-sign .hero-area .card h3 {
+  color: #268bf3;
+  font-weight: 700;
+}
+.body-sign .hero-area h1 {
+  color: #268bf3;
+  font-weight: 700;
+  position: relative;
+  text-transform: capitalize;
+}
+.body-sign .hero-area p {
+  font-size: 15px;
+}
+
+#layout-content
+{
+  display: none;
+}
+.invalid-login
+{
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.857rem;
+    color: #ea5455;
+}
+
+.close-sidebar
+{
+    background: transparent !important;
+    box-shadow: none !important;
+    position: unset !important;
+    transform: none !important;
+    transition: none !important;
+}
+
+.pay_mode {
+  margin-bottom: 0px; 
+  margin-top: 0px; 
+  text-align: center;
+}
+
+.tachado {
+  text-decoration:line-through;
+}
+
+.el-table__empty-text {
+  line-height: 60px;
+  width: 50%;
+  color: #909399;
+}
+
+.el-empty {
+  --el-empty-padding: 20px 0;
+  --el-empty-image-width: 150px;
+  --el-empty-description-margin-top: 40px;
+  --el-empty-bottom-margin-top: 10px;
+  --el-empty-fill-color-0: #ffffff;
+  --el-empty-fill-color-1: #fcfcfd;
+  --el-empty-fill-color-2: #f8f9fb;
+  --el-empty-fill-color-3: #f7f8fc;
+  --el-empty-fill-color-4: #eeeff3;
+  --el-empty-fill-color-5: #edeef2;
+  --el-empty-fill-color-6: #e9ebef;
+  --el-empty-fill-color-7: #e5e7e9;
+  --el-empty-fill-color-8: #e0e3e9;
+  --el-empty-fill-color-9: #d5d7de;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.el-table__empty-block {
+  position: sticky;
+  min-height: 30px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.el-empty__image {
+  width: 150px;
+}
