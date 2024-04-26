@@ -33,9 +33,9 @@
                 <h3 class="card-title text-center text-capitalize mb-1">B&aacute;sico</h3>
                 <div class="text-center">
                   <div class="d-flex justify-content-center">
-                    <sup class="h6 pricing-currency mt-3 mb-0 me-1 text-primary">S/</sup>
+                    {{-- <sup class="h6 pricing-currency mt-3 mb-0 me-1 text-primary">S/</sup>
                     <h1 class="display-4 mb-0 text-primary">60</h1>
-                    <sub class="h6 pricing-duration mt-auto mb-2 text-muted fw-normal">/mes</sub>
+                    <sub class="h6 pricing-duration mt-auto mb-2 text-muted fw-normal">/mes</sub> --}}
                   </div>
                 </div>
   
@@ -50,7 +50,7 @@
                   <li class="mb-0">1 usuario + 1 para contabilidad</li>
                 </ul>
   
-                <a target="_blank" class="btn btn-label-success d-grid w-100 waves-effect" href="https://api.whatsapp.com/send?phone=51950772205&text=Me interesa migrar a la suscripción Básica.">Ir con el administrador</a>
+                <a target="_blank" class="btn btn-label-success d-grid w-100 waves-effect" href="https://api.whatsapp.com/send?phone=393515503904&text=Me interesa migrar a la suscripción Básica.">Ir con el administrador</a>
               </div>
             </div>
           </div>
@@ -65,12 +65,12 @@
                 <h3 class="card-title text-center text-capitalize mb-1">Standard</h3>
                 <div class="text-center">
                   <div class="d-flex justify-content-center">
-                    <sup class="h6 pricing-currency mt-3 mb-0 me-1 text-primary">S/</sup>
+                    {{-- <sup class="h6 pricing-currency mt-3 mb-0 me-1 text-primary">S/</sup>
                     <h1 class="price-toggle price-yearly display-4 text-primary mb-0">65</h1>
                     <h1 class="price-toggle price-monthly display-4 text-primary mb-0 d-none">70</h1>
-                    <sub class="h6 text-muted pricing-duration mt-auto mb-2 fw-normal">/mes</sub>
+                    <sub class="h6 text-muted pricing-duration mt-auto mb-2 fw-normal">/mes</sub> --}}
                   </div>
-                  <small class="price-yearly price-yearly-toggle text-muted">S/ 780.00 / a&ntilde;o</small>
+                  {{-- <small class="price-yearly price-yearly-toggle text-muted">S/ 780.00 / a&ntilde;o</small> --}}
                 </div>
   
                 <ul class="ps-3 my-4 pt-2">
@@ -85,7 +85,7 @@
                     <li class="mb-0">1 almac&eacute;n</li>
                 </ul>
   
-                <a target="_blank" class="btn btn-primary d-grid w-100 waves-effect waves-light" href="https://api.whatsapp.com/send?phone=51950772205&text=Me interesa migrar a la suscripción Standard.">Ir con el administrador</a>
+                <a target="_blank" class="btn btn-primary d-grid w-100 waves-effect waves-light" href="https://api.whatsapp.com/send?phone=393515503904&text=Me interesa migrar a la suscripción Standard.">Ir con el administrador</a>
               </div>
             </div>
           </div>
@@ -102,12 +102,12 @@
   
                 <div class="text-center">
                   <div class="d-flex justify-content-center">
-                    <sup class="h6 text-primary pricing-currency mt-3 mb-0 me-1">S/</sup>
+                    {{-- <sup class="h6 text-primary pricing-currency mt-3 mb-0 me-1">S/</sup>
                     <h1 class="price-toggle price-yearly display-4 text-primary mb-0">75</h1>
                     <h1 class="price-toggle price-monthly display-4 text-primary mb-0 d-none">80</h1>
-                    <sub class="h6 pricing-duration mt-auto mb-2 fw-normal text-muted">/mes</sub>
+                    <sub class="h6 pricing-duration mt-auto mb-2 fw-normal text-muted">/mes</sub> --}}
                   </div>
-                  <small class="price-yearly price-yearly-toggle text-muted">S/ 900 / a&ntilde;o</small>
+                  {{-- <small class="price-yearly price-yearly-toggle text-muted">S/ 900 / a&ntilde;o</small> --}}
                 </div>
   
                 <ul class="ps-3 my-4 pt-2">
@@ -122,7 +122,7 @@
                   <li class="mb-0">2 almacenes</li>
                 </ul>
   
-                <a target="_blank" class="btn btn-label-primary d-grid w-100 waves-effect" href="https://api.whatsapp.com/send?phone=51950772205&text=Me interesa migrar a la suscripción Premiun.">Ir con el administrador</a>
+                <a target="_blank" class="btn btn-label-primary d-grid w-100 waves-effect" href="https://api.whatsapp.com/send?phone=393515503904&text=Me interesa migrar a la suscripción Premiun.">Ir con el administrador</a>
               </div>
             </div>
           </div>
@@ -150,7 +150,7 @@
             <div class="row mx-4">
                 <div class="col-12">
                     <div class="table-responsive border rounded">
-                        <table class="table table-striped text-center mb-0">
+                        {{-- <table class="table table-striped text-center mb-0">
                             <thead>
                                 <tr>
                                     <th scope="col" colspan="1">
@@ -175,7 +175,7 @@
                                     <td colspan="3">S/10.00</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table> --}}
                     </div>
                 </div>
             </div>

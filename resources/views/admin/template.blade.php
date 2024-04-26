@@ -17,7 +17,8 @@
     <meta name="description" content="Sistema de Facturación Electrónica desarrollado por Mytems E.I.R.L." />
     <meta name="author" content="Mytems EIRL.">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon/favicon-mytems.ico') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon/logo_fondo_transparente.png') }}">
+    {{-- \assets\img\favicon --}}
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -135,10 +136,10 @@
           <div class="app-brand demo">
             <a href="{{ route('admin.home') }}" class="app-brand-link">
                 <span class="app-brand-logo demo">
-                    <img src="{{ asset('assets/img/icons/icon-login.svg') }}" alt=""
+                    <img src="{{ asset('assets/img/icons/logo_fondo_transparente.png') }}" alt=""
                         class="img-fluid">
                 </span>
-              <span class="app-brand-text demo menu-text fw-bold">Mytems</span>
+              <span class="app-brand-text demo menu-text fw-bold">Resto & Bar</span>
             </a>
 
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
