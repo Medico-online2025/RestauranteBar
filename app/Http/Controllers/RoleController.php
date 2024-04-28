@@ -112,22 +112,22 @@ class RoleController extends Controller
 
     public function delete(Request $request)
     {
-        if(!$request->ajax())
-        {
-            echo json_encode([
-                'status'    => false,
-                'msg'       => 'Intente de nuevo',
-                'type'      => 'warning'
-            ]);
-            return;
-        }
+        // if(!$request->ajax())
+        // {
+        //     echo json_encode([
+        //         'status'    => false,
+        //         'msg'       => 'Intente de nuevo',
+        //         'type'      => 'warning'
+        //     ]);
+        //     return;
+        // }
 
-        $id            = $request->input('id');
-        Role::where('id', $id)->delete();
-        echo json_encode([
-            'status'    => true,
-            'msg'       => 'Registro eliminado con éxito',
-            'type'      => 'success'
-        ]);
+        // $id            = $request->input('id');
+        // Role::where('id', $id)->delete();
+        // echo json_encode([
+        //     'status'    => true,
+        //     'msg'       => 'Registro eliminado con éxito',
+        //     'type'      => 'success'
+        // ]);
     }
 }

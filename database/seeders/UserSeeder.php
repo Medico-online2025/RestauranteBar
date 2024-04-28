@@ -17,7 +17,7 @@ class UserSeeder extends Seeder
         User::create([
             'nombres'   => 'Administrador',
             'user'      => 'admin',
-            'password'  => bcrypt('admin123.'),
+            'password'  => bcrypt('admin123_*'),
             'estado'    => 1,
             'idcaja'    => 1
         ])->assignRole('SUPERADMIN');
@@ -25,7 +25,7 @@ class UserSeeder extends Seeder
         User::create([
             'nombres'   => 'Krowed Najar',
             'user'      => 'krowed',
-            'password'  => bcrypt('krowed123.'),
+            'password'  => bcrypt('krowed123_*'),
             'estado'    => 1,
             'idcaja'    => 1
         ])->assignRole('ADMIN');
@@ -33,7 +33,7 @@ class UserSeeder extends Seeder
         User::create([
             'nombres'   => 'Vendedor',
             'user'      => 'user',
-            'password'  => bcrypt('user123.'),
+            'password'  => bcrypt('user123-*'),
             'estado'    => 1,
             'idcaja'    => 1
         ])->assignRole('VENDEDOR');
@@ -41,7 +41,7 @@ class UserSeeder extends Seeder
         User::create([
             'nombres'   => 'Mesero',
             'user'      => 'mesero',
-            'password'  => bcrypt('mesero123.'),
+            'password'  => bcrypt('mesero123-*'),
             'estado'    => 1,
             'idcaja'    => 1
         ])->assignRole('MESERO');
