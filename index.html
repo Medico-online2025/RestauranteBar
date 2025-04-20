@@ -1,132 +1,138 @@
-<!DOCTYPE html><html lang="it">
+<!DOCTYPE html>
+<html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Consulenza Ginecologica Online - Dr.ssa Anna Maria Ferri</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consulenza Ginecologica Online - Dott.ssa [Il Tuo Nome]</title>
   <style>
     body {
-      margin: 0;
       font-family: 'Segoe UI', sans-serif;
+      margin: 0;
       background-color: #fff0f5;
       color: #333;
-    }header {
-  background-color: #e91e63;
-  color: white;
-  padding: 2rem;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin: 0;
-}
-
-header p {
-  font-size: 1.2rem;
-}
-
-.hero {
-  background: url('https://tse1.mm.bing.net/th?id=OIP.mTYCsevuF6-d7wKPcWEykQHaHa&pid=Api') center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 5rem 2rem;
-}
-
-.hero p {
-  font-size: 1.5rem;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-}
-
-.button {
-  background-color: #c2185b;
-  color: white;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 1rem;
-}
-
-.section {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-.section h2 {
-  color: #e91e63;
-}
-
-.section ul {
-  list-style: disc;
-  padding-left: 1.5rem;
-}
-
-form textarea {
-  width: 100%;
-  padding: 1rem;
-  font-size: 1rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  margin-top: 1rem;
-}
-
-form button {
-  background-color: #e91e63;
-  color: white;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 6px;
-  margin-top: 1rem;
-  font-size: 1rem;
-}
-
-footer {
-  text-align: center;
-  background-color: #f8bbd0;
-  padding: 2rem;
-  font-size: 0.9rem;
-}
-
-footer a {
-  color: #e91e63;
-  text-decoration: none;
-}
-
+    }
+    header {
+      background-color: #d81b60;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      background-color: #f8bbd0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: #d81b60;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1588776814546-ec91c91d0b42') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      background-color: rgba(0,0,0,0.5);
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+    }
+    .section {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .section h2 {
+      color: #d81b60;
+    }
+    .abbonamento {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .abbonamento a {
+      background-color: #d81b60;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+    .abbonamento a:hover {
+      background-color: #ad1457;
+    }
+    footer {
+      background-color: #f8bbd0;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #d81b60;
+      text-decoration: underline;
+    }
   </style>
 </head>
-<body><header>
-  <h1>Dr.ssa Anna Maria Ferri</h1>
-  <p>Consulenze ginecologiche online – Sempre disponibile</p>
-</header><div class="hero">
-  <p>Videoconsulti ginecologici a 80€/mese. Servizio disponibile 7 giorni su 7</p>
-  <a href="#abbonamento" class="button">Attiva il servizio</a>
-</div><section class="section" id="abbonamento">
-  <h2>Abbonati ora</h2>
-  <p>Accesso illimitato ai videoconsulti ginecologici, risposte rapide e supporto continuativo.</p>
-  <p><strong>Costo mensile: 80€</strong></p>
-  <a href="https://buy.stripe.com/test_czcdT8fG72uOeG0fYZ" class="button">Abbonati</a>
-</section><section class="section">
-  <h2>Servizi inclusi</h2>
-  <ul>
-    <li>Consulenza su ciclo mestruale</li>
-    <li>Gestione della menopausa</li>
-    <li>Infezioni vaginali e uro-genitali</li>
-    <li>Fertilità</li>
-  </ul>
-</section><section class="section">
-  <h2>Contatta la dottoressa</h2>
-  <form action="https://formspree.io/f/xwpldpjr" method="POST">
-    <textarea name="domanda" rows="5" placeholder="Scrivi la tua domanda..." required></textarea>
-    <button type="submit">Invia la domanda</button>
-  </form>
-</section><footer>
-  <p>&copy; 2025 Dr.ssa Anna Maria Ferri - Ginecologa Online</p>
-  <p><a href="#">Privacy Policy</a> | <a href="#">Termini di Servizio</a></p>
-</footer></body>
+<body>
+
+  <header>
+    <h1>Dott.ssa [Il Tuo Nome]</h1>
+    <p>Consulenze ginecologiche online, ovunque tu sia</p>
+  </header>
+
+  <nav>
+    <a href="#chi-sono">Chi sono</a>
+    <a href="#servizi">Servizi</a>
+    <a href="#abbonamento">Abbonamento</a>
+    <a href="#contatti">Contatti</a>
+    <a href="#privacy">Privacy</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Supporto ginecologico disponibile h24. Videoconsulti e messaggistica privata.</h2>
+  </div>
+
+  <section class="section" id="chi-sono">
+    <h2>Chi sono</h2>
+    <p>Sono la Dott.ssa [Il tuo nome], medico chirurgo specializzato in ginecologia. Mi dedico al supporto della salute femminile, offrendo consulenze online private e professionali.</p>
+    <img src="https://images.unsplash.com/photo-1588776814546-ec91c91d0b42" alt="Videoconsulto medico" style="max-width:100%; border-radius:12px; margin-top:1rem;">
+  </section>
+
+  <section class="section" id="servizi">
+    <h2>Servizi disponibili</h2>
+    <ul>
+      <li>Consulenze ginecologiche online</li>
+      <li>Supporto per contraccezione e fertilità</li>
+      <li>Gestione menopausa, cicli irregolari, infezioni</li>
+      <li>Risposte via chat o video</li>
+    </ul>
+  </section>
+
+  <section class="abbonamento" id="abbonamento">
+    <h2>Abbonamento mensile</h2>
+    <p>Accesso completo alle consulenze: solo 80€ al mese</p>
+    <a href="https://buy.stripe.com/8wM9DSfAudKn9S814a">Attiva l'abbonamento</a>
+  </section>
+
+  <section class="section" id="contatti">
+    <h2>Contatti</h2>
+    <p>Email: info@iltuosito.it</p>
+    <p>Ricevi assistenza entro poche ore dalla richiesta.</p>
+  </section>
+
+  <footer id="privacy">
+    <p><strong>Privacy & Policy:</strong> Tutti i dati raccolti sono trattati in conformità al Regolamento Europeo GDPR 679/2016. L'utente accetta che i dati forniti vengano utilizzati esclusivamente per finalità sanitarie e gestionali. Il servizio non è anonimo.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Termini di Servizio</a></p>
+    <p>&copy; 2025 Dott.ssa [Il tuo nome] - Tutti i diritti riservati</p>
+  </footer>
+
+</body>
 </html>
