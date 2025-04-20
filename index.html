@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benessere Donna - La tua ginecologa online</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #d81b60;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: #fce4ec;
+    }
+
+    .hero img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      color: #c2185b;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
+
+    .button {
+      margin-top: 1.5rem;
+      padding: 1rem 2rem;
+      background-color: #e91e63;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #ad1457;
+    }
+
+    .section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .section h2 {
+      color: #d81b60;
+    }
+
+    form label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+
+    form button {
+      margin-top: 1rem;
+      padding: 12px 24px;
+      background-color: #d81b60;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    form button:hover {
+      background-color: #ad1457;
+    }
+
+    .price-box {
+      background: #fce4ec;
+      padding: 1.5rem;
+      border-radius: 12px;
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .price-box h3 {
+      font-size: 2rem;
+      color: #d81b60;
+      margin-bottom: 0.5rem;
+    }
+
+    .price-box p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .recensioni blockquote {
+      background: #f9f9f9;
+      border-left: 4px solid #d81b60;
+      padding: 1rem;
+      margin: 1rem 0;
+      font-style: italic;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #f8bbd0;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #d81b60;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Benessere Donna</h1>
+    <p>Consulenze ginecologiche online con la Dott.ssa [Il Tuo Nome]</p>
+  </header>
+
+  <div class="hero">
+    <img src="https://images.unsplash.com/photo-1588776814546-ec7e9003f1b9?auto=format&fit=crop&w=900&q=80" alt="Videoconsulto ginecologo">
+    <h2>Supporto ginecologico, ovunque ti trovi</h2>
+    <p>Servizio professionale disponibile 7 giorni su 7. Consulta la tua ginecologa direttamente online.</p>
+    <a href="#abbonamento" class="button">Abbonati ora</a>
+  </div>
+
+  <section class="section price-box" id="abbonamento">
+    <h3>80€ / mese</h3>
+    <p>Accesso illimitato alla tua ginecologa online</p>
+    <a href="https://buy.stripe.com/test_a1b2c3" class="button">Attiva abbonamento</a>
+  </section>
+
+  <section class="section">
+    <h2>Invia una domanda</h2>
+    <form action="https://formspree.io/f/xwpldpjr" method="POST">
+      <label for="question">La tua domanda:</label>
+      <textarea id="question" name="question" rows="6" required></textarea>
+      <button type="submit">Invia</button>
+    </form>
+  </section>
+
+  <section class="section recensioni">
+    <h2>Recensioni</h2>
+    <blockquote>"Servizio impeccabile, chiaro e rassicurante. Ottima esperienza!"<br><strong>– Lucia V.</strong></blockquote>
+    <blockquote>"È come avere la mia ginecologa sempre con me. Super consigliato!"<br><strong>– Serena F.</strong></blockquote>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Benessere Donna - Dott.ssa [Il Tuo Nome]</p>
+    <p>
+      <a href="/privacy.html">Privacy</a> |
+      <a href="/termini.html">Termini di Servizio</a> |
+      <a href="/cookie.html">Cookie Policy</a>
+    </p>
+  </footer>
+
+</body>
+</html>
