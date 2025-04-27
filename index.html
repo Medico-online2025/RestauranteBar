@@ -7,72 +7,98 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fff0f5;
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f7fb;
       color: #333;
+      line-height: 1.6;
     }
 
     header {
       background-color: #d81b60;
       color: white;
-      padding: 2rem;
+      padding: 3rem 1.5rem;
       text-align: center;
+      border-bottom: 4px solid #ad1457;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 2px;
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
+      margin-top: 1rem;
     }
 
     nav {
       background-color: #f8bbd0;
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem 0;
+      font-size: 1.1rem;
     }
 
     nav a {
-      margin: 0 1rem;
+      margin: 0 1.5rem;
       color: #d81b60;
-      font-weight: bold;
+      font-weight: 600;
       text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ad1457;
     }
 
     .hero {
       background: url('https://images.unsplash.com/photo-1588776814546-ec91c91d0b42') center/cover no-repeat;
       color: white;
       text-align: center;
-      padding: 5rem 2rem;
+      padding: 6rem 2rem;
+      background-position: center;
+      background-size: cover;
+      position: relative;
     }
 
     .hero h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       background-color: rgba(0,0,0,0.5);
-      padding: 1rem;
-      border-radius: 12px;
+      padding: 1.5rem;
+      border-radius: 10px;
       display: inline-block;
+      letter-spacing: 1px;
+      font-weight: 600;
     }
 
     .section {
       max-width: 900px;
-      margin: 3rem auto;
-      padding: 2rem;
+      margin: 4rem auto;
+      padding: 3rem;
       background: white;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-10px);
     }
 
     .section h2 {
       color: #d81b60;
-      margin-bottom: 1rem;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
     }
 
     .section ul {
       list-style-type: disc;
       padding-left: 1.5rem;
+      margin-top: 1rem;
+      font-size: 1.1rem;
     }
 
     .button {
@@ -80,23 +106,33 @@
       background-color: #d81b60;
       color: white;
       padding: 1rem 2rem;
-      border-radius: 8px;
+      border-radius: 30px;
       text-decoration: none;
       font-size: 1.1rem;
-      margin-top: 1rem;
+      margin-top: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
     .button:hover {
       background-color: #ad1457;
+      transform: translateY(-5px);
     }
 
     form textarea {
       width: 100%;
-      padding: 1rem;
-      font-size: 1rem;
-      border-radius: 6px;
+      padding: 1.2rem;
+      font-size: 1.1rem;
+      border-radius: 8px;
       border: 1px solid #ccc;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
+      transition: border-color 0.3s ease;
+    }
+
+    form textarea:focus {
+      border-color: #d81b60;
+      outline: none;
     }
 
     form button {
@@ -104,36 +140,71 @@
       color: white;
       padding: 1rem 2rem;
       border: none;
-      border-radius: 6px;
-      margin-top: 1rem;
-      font-size: 1rem;
+      border-radius: 30px;
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
       cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
     form button:hover {
       background-color: #ad1457;
+      transform: translateY(-5px);
     }
 
     footer {
       text-align: center;
       background-color: #f8bbd0;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
+      padding: 3rem 1.5rem;
+      font-size: 1rem;
       margin-top: 4rem;
+      color: #555;
+      border-top: 4px solid #ad1457;
     }
 
     footer a {
       color: #d81b60;
-      text-decoration: underline;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      color: #ad1457;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+
+      nav {
+        font-size: 1rem;
+      }
+
+      .button {
+        font-size: 1rem;
+        padding: 0.9rem 1.8rem;
+      }
+
+      .section {
+        padding: 2rem;
+      }
     }
 
     @media (max-width: 600px) {
       .hero h2 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
       }
 
-      nav {
-        font-size: 0.9rem;
+      .button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
       }
     }
   </style>
@@ -146,8 +217,7 @@
   </header>
 
   <nav>
- <a href="#scrivimi">SCRIVIMI</a>
-    
+    <a href="#scrivimi">SCRIVIMI</a>
   </nav>
 
   <div class="hero">
@@ -181,14 +251,15 @@
     </form>
   </section>
 
-  <footer id="privacy">
+  <footer>
     <p>&copy; 2025 Dott.ssa Anna Maria Ferri - Medico Ginecologo online</p>
     <p>
       Questo sito rispetta il GDPR (Reg. UE 2016/679). I dati raccolti sono usati esclusivamente per finalità mediche e non sono mai ceduti a terzi.
     </p>
+    <p>
+      Navigando su questo sito accetti la nostra <a href="privacy.html">Privacy Policy</a> e i <a href="privacy.html">Termini di Servizio</a>.
+    </p>
   </footer>
-<ffooter style="text-align: center; font-size: 14px; color: #555; margin-top: 50px;">
-    Navigando su questo sito accetti la nostra <a href="privacy.html" style="color: #005599;">Privacy Policy</a> e i <a href="privacy.html" style="color: #005599;">Termini di Servizio</a>.
-</footer>
+
 </body>
 </html>
