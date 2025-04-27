@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dott.ssa Anna Maria Ferri - Medico Chirurgo Specialista in Ginecologia e Ostetricia</title>
+  <title>Contatta la Dott.ssa Anna Maria Ferri</title>
   <style>
     body {
       margin: 0;
@@ -14,7 +14,7 @@
     }
 
     header {
-      background-color: #4db8b8; /* Colore verde acqua */
+      background-color: #4db8b8;
       color: white;
       padding: 4rem 2rem;
       text-align: center;
@@ -34,132 +34,61 @@
       font-weight: 400;
     }
 
-    nav {
-      background-color: #ffffff;
-      text-align: center;
-      padding: 1.5rem 0;
-      font-size: 1.1rem;
-    }
-
-    nav a {
-      margin: 0 1.5rem;
-      color: #4db8b8;
-      font-weight: 600;
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #2e8b8b;
-    }
-
-    .hero {
-      background: url('https://images.unsplash.com/photo-1556740738-7b4b93f2e56b') center/cover no-repeat;
-      color: white;
-      text-align: center;
-      padding: 6rem 2rem;
-      background-position: center;
-      background-size: cover;
-      position: relative;
-    }
-
-    .hero h2 {
-      font-size: 2.5rem;
-      background-color: rgba(0,0,0,0.5);
-      padding: 1.5rem;
-      border-radius: 10px;
-      display: inline-block;
-      letter-spacing: 1px;
-      font-weight: 600;
-      margin-bottom: 1rem;
-    }
-
-    .section {
-      max-width: 900px;
-      margin: 4rem auto;
-      padding: 3rem;
+    .form-container {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 2rem;
       background: white;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
     }
 
-    .section:hover {
-      transform: translateY(-10px);
-    }
-
-    .section h2 {
+    .form-container h2 {
       color: #4db8b8;
       font-size: 2rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
       font-weight: 600;
     }
 
-    .section ul {
-      list-style-type: disc;
-      padding-left: 1.5rem;
-      margin-top: 1rem;
+    .form-container label {
       font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      display: block;
     }
 
-    .button {
-      display: inline-block;
-      background-color: #4db8b8;
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 30px;
-      text-decoration: none;
-      font-size: 1.1rem;
-      margin-top: 2rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: #2e8b8b;
-      transform: translateY(-5px);
-    }
-
-    form textarea {
+    .form-container input, .form-container textarea {
       width: 100%;
-      padding: 1.2rem;
+      padding: 1rem;
       font-size: 1.1rem;
       border-radius: 8px;
       border: 1px solid #ccc;
-      margin-top: 1.5rem;
-      transition: border-color 0.3s ease;
+      margin-bottom: 1.5rem;
     }
 
-    form textarea:focus {
+    .form-container input:focus, .form-container textarea:focus {
       border-color: #4db8b8;
       outline: none;
     }
 
-    form button {
+    .form-container button {
       background-color: #4db8b8;
       color: white;
       padding: 1rem 2rem;
       border: none;
       border-radius: 30px;
-      margin-top: 1.5rem;
       font-size: 1.1rem;
       cursor: pointer;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
+      transition: background-color 0.3s ease;
     }
 
-    form button:hover {
+    .form-container button:hover {
       background-color: #2e8b8b;
-      transform: translateY(-5px);
     }
 
     footer {
       text-align: center;
       background-color: #ffffff;
-      padding: 3rem 1.5rem;
+      padding: 2rem 1.5rem;
       font-size: 1rem;
       margin-top: 4rem;
       color: #555;
@@ -176,88 +105,36 @@
       color: #2e8b8b;
     }
 
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-
-      .hero h2 {
-        font-size: 1.8rem;
-      }
-
-      nav {
-        font-size: 1rem;
-      }
-
-      .button {
-        font-size: 1rem;
-        padding: 0.9rem 1.8rem;
-      }
-
-      .section {
-        padding: 2rem;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .hero h2 {
-        font-size: 1.6rem;
-      }
-
-      .button {
-        font-size: 1rem;
-        padding: 0.8rem 1.5rem;
-      }
-    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Dott.ssa Anna Maria Ferri</h1>
-    <p>Consulenze di medicina generale e ginecologiche online – Disponibile 7 giorni su 7</p>
+    <h1>Contatta la Dott.ssa Anna Maria Ferri</h1>
+    <p>Compila il modulo sottostante per inviare la tua richiesta o domanda.</p>
   </header>
 
-  <nav>
-    <a href="#contatto">SCRIVIMI</a> <!-- Modificato per collegarsi alla sezione contatto -->
-  </nav>
-
-  <div class="hero">
-    <h2>Videoconsulti illimitati a 80€ al mese</h2>
-    <a href="https://buy.stripe.com/8wM9DSfAudKn9S814a" class="button" target="_blank">PAGA ORA</a> <!-- Link di pagamento -->
-  </div>
-
-  <section class="section" id="servizi">
-    <h2>Servizi inclusi</h2>
-    <ul>
-      <li>Consulenze su ciclo mestruale</li>
-      <li>Gestione menopausa</li>
-      <li>Infezioni vaginali e urinarie</li>
-      <li>Fertilità e contraccezione</li>
-      <li>Supporto medico via video e chat 7 giorni su 7</li>
-    </ul>
-  </section>
-
-  <section class="section" id="abbonamento">
-    <h2>PAGA ORA</h2>
-    <p>Accesso illimitato ai videoconsulti medici e ginecologici online con la dottoressa Ferri</p>
-    <p><strong>Prezzo: 80€ al mese</strong></p>
-    <a href="https://buy.stripe.com/8wM9DSfAudKn9S814a" class="button" target="_blank">Paga</a>
-  </section>
-
-  <section class="section" id="contatto">
-    <h2>Contatta la dottoressa Ferri</h2>
+  <div class="form-container">
+    <h2>Modulo di Contatto</h2>
     <form action="https://formspree.io/f/xwpldpjr" method="POST">
-      <textarea name="domanda" rows="5" placeholder="Scrivi la tua domanda..." required></textarea>
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
+
+      <label for="telefono">Telefono (opzionale)</label>
+      <input type="text" id="telefono" name="telefono" placeholder="Inserisci il tuo numero di telefono">
+
+      <label for="domanda">Domanda</label>
+      <textarea id="domanda" name="domanda" rows="5" placeholder="Scrivi il tuo messaggio..." required></textarea>
+
       <button type="submit">Invia</button>
     </form>
-  </section>
+  </div>
 
   <footer>
     <p>&copy; 2025 Dott.ssa Anna Maria Ferri - Medico Ginecologo online</p>
-    <p>
-      Questo sito rispetta il GDPR (Reg. UE 2016/679). I dati raccolti sono usati esclusivamente per finalità mediche e non sono mai ceduti a terzi.
-    </p>
     <p>
       Navigando su questo sito accetti la nostra <a href="privacy.html">Privacy Policy</a> e i <a href="privacy.html">Termini di Servizio</a>.
     </p>
