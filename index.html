@@ -1,132 +1,76 @@
-<!DOCTYPE html><html lang="it">
+<!DOCTYPE html>
+<html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Consulenza Ginecologica Online - Dr.ssa Anna Maria Ferri</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consulenze Mediche Online - Dott.ssa Anna Maria Ferri</title>
   <style>
     body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fff0f5;
+      padding: 0;
+      background: url('https://images.unsplash.com/photo-1588776814546-4efb5d9cbd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    header {
+      background-color: rgba(0, 51, 102, 0.8);
+      padding: 30px 20px;
+      text-align: center;
+    }
+    main {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 40px auto;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 12px;
+    }
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    a {
+      color: #66c2ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background-color: rgba(224, 224, 224, 0.7);
       color: #333;
-    }header {
-  background-color: #e91e63;
-  color: white;
-  padding: 2rem;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin: 0;
-}
-
-header p {
-  font-size: 1.2rem;
-}
-
-.hero {
-  background: url('https://tse1.mm.bing.net/th?id=OIP.mTYCsevuF6-d7wKPcWEykQHaHa&pid=Api') center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 5rem 2rem;
-}
-
-.hero p {
-  font-size: 1.5rem;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-}
-
-.button {
-  background-color: #c2185b;
-  color: white;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 1rem;
-}
-
-.section {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-.section h2 {
-  color: #e91e63;
-}
-
-.section ul {
-  list-style: disc;
-  padding-left: 1.5rem;
-}
-
-form textarea {
-  width: 100%;
-  padding: 1rem;
-  font-size: 1rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  margin-top: 1rem;
-}
-
-form button {
-  background-color: #e91e63;
-  color: white;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 6px;
-  margin-top: 1rem;
-  font-size: 1rem;
-}
-
-footer {
-  text-align: center;
-  background-color: #f8bbd0;
-  padding: 2rem;
-  font-size: 0.9rem;
-}
-
-footer a {
-  color: #e91e63;
-  text-decoration: none;
-}
-
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
   </style>
 </head>
-<body><header>
-  <h1>Dr.ssa Anna Maria Ferri</h1>
-  <p>Consulenze ginecologiche online – Sempre disponibile</p>
-</header><div class="hero">
-  <p>Videoconsulti ginecologici a 80€/mese. Servizio disponibile 7 giorni su 7</p>
-  <a href="#abbonamento" class="button">Attiva il servizio</a>
-</div><section class="section" id="abbonamento">
-  <h2>Abbonati ora</h2>
-  <p>Accesso illimitato ai videoconsulti ginecologici, risposte rapide e supporto continuativo.</p>
-  <p><strong>Costo mensile: 80€</strong></p>
-  <a href="https://buy.stripe.com/test_czcdT8fG72uOeG0fYZ" class="button">Abbonati</a>
-</section><section class="section">
-  <h2>Servizi inclusi</h2>
-  <ul>
-    <li>Consulenza su ciclo mestruale</li>
-    <li>Gestione della menopausa</li>
-    <li>Infezioni vaginali e uro-genitali</li>
-    <li>Fertilità</li>
-  </ul>
-</section><section class="section">
-  <h2>Contatta la ginecologa</h2>
-  <form action="https://formspree.io/f/xwpldpjr" method="POST">
-    <textarea name="domanda" rows="5" placeholder="Scrivi la tua domanda..." required></textarea>
-    <button type="submit">Invia la domanda</button>
-  </form>
-</section><footer>
-  <p>&copy; 2025 Dr.ssa Anna Maria Ferri- Ginecologa Online</p>
-  <p><a href="#">Privacy Policy</a> | <a href="#">Termini di Servizio</a></p>
-</footer></body>
+<body>
+
+<header>
+  <h1>Dott.ssa Anna Maria Ferri</h1>
+  <h2>Medico Chirurgo - Specialista in Ginecologia e Ostetricia</h2>
+</header>
+
+<main>
+  <h2>Consulenze Mediche Online</h2>
+  <p>Supporto professionale, ascolto e consulenze riservate.<br>Contattami direttamente su WhatsApp per ricevere informazioni o fissare un appuntamento.</p>
+  <p><a href="https://wa.me/393515503904" target="_blank">Scrivimi su WhatsApp</a></p>
+</main>
+
+<footer>
+  Navigando su questo sito accetti la nostra <a href="privacy.html" style="color:#003366;">Privacy Policy</a> e i <a href="privacy.html" style="color:#003366;">Termini di Servizio</a>.
+</footer>
+
+</body>
 </html>
